@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #7bcbcb
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("./robot.gif");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    width: 200px;
+    height: 50px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 20px;
+    color: white;
+    background: #f36f5b;
+    border: none;
+    border-radius: 2.5px;
+    box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    box-shadow: inset 0 100px 0 0 #Ffce55;
+ 
+}
+
+button:active {
+    transform: scale(0.85);
+}
+
+button:disabled {
+    cursor: default;
+    filter: brightness(40%);
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        background-position: center center;
+        background-size: cover;
+    }
+}
